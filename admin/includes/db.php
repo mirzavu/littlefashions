@@ -3,7 +3,7 @@ ini_set('display_errors','E_ALL & ~E_NOTICE');
  // Database Variables (edit with your own server information)
  $server = 'localhost';
  $user = 'root';
- $pass = '';
+ $pass = 'redhat';
  $db = 'littlefashiondb';
  
  // Connect to Database

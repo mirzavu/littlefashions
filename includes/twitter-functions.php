@@ -10,7 +10,7 @@ class Users {
 		$dbServer ='localhost'; //Define database server host
 		$dbUsername ='littlefa_final'; //Define database username
 		$dbPassword ='fashion12#'; //Define database password
-		$dbName ='littlefa_little'; //Define database name
+		$dbName ='littlefashiondb'; //Define database name
 		
 		//Connect databse
 		$con = mysqli_connect($dbServer,$dbUsername,$dbPassword,$dbName);

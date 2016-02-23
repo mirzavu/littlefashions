@@ -1,8 +1,8 @@
 <?php
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'littlefa_final');    // DB username
-define('DB_PASSWORD', 'fashion12#');    // DB password
-define('DB_DATABASE', 'littlefa_little');      // DB name
+define('DB_USERNAME', 'root');    // DB username
+define('DB_PASSWORD', 'redhat');    // DB password
+define('DB_DATABASE', 'littlefashiondb');      // DB name
 $connection = mysql_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD) or die( "Unable to connect");
 $database = mysql_select_db(DB_DATABASE) or die( "Unable to select database");
 ?>
