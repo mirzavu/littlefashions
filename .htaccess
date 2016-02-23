@@ -1,0 +1,11 @@
+<IfModule mod_php5.c>
+   php_value short_open_tag 1
+ </IfModule>
+
+# Always use https for secure connections
+# Replace 'www.example.com' with your domain name
+# (as it appears on your SSL certificate)
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.littlefashionss.in/$1 [R=301,L]
+
