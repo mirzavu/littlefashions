@@ -55,6 +55,9 @@
 							$file = $_FILES['image']['tmp_name'];
 							$image = addslashes(file_get_contents($_FILES['image']['tmp_name']));
 							$image_name = addslashes($_FILES['image']['name']);
+                            list($txt, $ext) = explode(".", $image_name);
+                            if($ext!="jpg" && $ext!="png" && $ext!="jpeg" && $ext!="bmp")
+                                echo "Invalid file";exit;
 							$ofper=$_POST['ofper'];
 							move_uploaded_file($_FILES["image"]["tmp_name"],"../images/offers/"."$cap".$_FILES["image"]["name"]);
 							

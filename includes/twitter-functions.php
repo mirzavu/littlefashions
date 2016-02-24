@@ -8,8 +8,8 @@ class Users {
 	function __construct(){
 		//Database configuration
 		$dbServer ='localhost'; //Define database server host
-		$dbUsername ='littlefa_final'; //Define database username
-		$dbPassword ='fashion12#'; //Define database password
+		$dbUsername ='root'; //Define database username
+		$dbPassword ='redhat'; //Define database password
 		$dbName ='littlefashiondb'; //Define database name
 		
 		//Connect databse

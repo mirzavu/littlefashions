@@ -139,6 +139,8 @@ function loadData(loadType,loadId){
 											   $size = $_FILES['image']['size'][$i];
 							   
 											   list($txt, $ext) = explode(".", $name);
+                                               if($ext!="jpg" && $ext!="png" && $ext!="jpeg" && $ext!="bmp")
+                                                 echo "Invalid file";exit;
 											   $file= time().substr(str_replace(" ", "_", $txt), 0);
 											   $info = pathinfo($file);
 											   $filename = $file.".".$ext;

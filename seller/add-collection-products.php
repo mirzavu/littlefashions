@@ -140,7 +140,9 @@ function loadData(loadType,loadId){
 											   $size = $_FILES['image']['size'][$i];
 							   
 											   list($txt, $ext) = explode(".", $name);
-											   $file= time().substr(str_replace(" ", "_", $txt), 0);
+											   if($ext!="jpg" && $ext!="png" && $ext!="jpeg" && $ext!="bmp")
+                                                 echo "Invalid file";exit;
+                                               $file= time().substr(str_replace(" ", "_", $txt), 0);
 											   $info = pathinfo($file);
 											   $filename = $file.".".$ext;
 											   if(move_uploaded_file($_FILES['image']['tmp_name'][$i], $path.$filename)) 
